@@ -7,6 +7,7 @@ python twitterstream.py > output.txt
 python tweet_sentiment.py AFINN-111.txt output.txt 
 
 APPROACH
+
 Data in the form of raw tweets is acquired by using the python library “tweestream” which provides a package for simple twitter streaming API. This API allows two modes of accessing tweets: SampleStream and FilterStream. SampleStream simply delivers a small, random sample of all the tweets streaming at a real time. FilterStream delivers tweet which match a certain criterion.
 AFINN is a list of English words rated for valence with an integer between minus five (negative) and plus five (positive). The words have been manually labeled by Finn Årup Nielsen in 2009-2011. The file is tab-separated. There are two versions: AFINN-111: Newest version with 2477 words and phrases. AFINN-96: 1468 unique words and phrases on 1480 lines. Note that there are 1480 lines, as some words are listed twice. The word list in not entirely in alphabetic ordering.
 In sentiment analysis domain, the texts belong to either of positive or negative classes. There may also be multi-valued or binary classes like positive, negative and neutral (or irrelevant).
